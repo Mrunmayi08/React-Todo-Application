@@ -38,7 +38,8 @@ class CreateTask extends Component {
       });
     }
   };
-  handleCreateTask = () => {
+  handleCreateTask = (e) => {
+    e.preventDefault();
     let taskobj = {};
     taskobj["Name"] = this.state.task;
     taskobj["Discription"] = this.state.discription;
